@@ -2,7 +2,75 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
   font-family: "Kaushan Script", cursive;
   outline: none;
+}
+.navbar {
+  padding: 0 6%;
+  background-color: #14140f;
+}
+.nav-link {
+  color: #14140f;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s ease;
+  margin-left: 2rem;
+  text-align: center;
+}
+.nav-link:hover {
+  color: #14140f;
+  border-bottom: 2px solid #14140f;
+}
+#hero {
+  min-height: calc(100vh-60px);
+  background-color: #14140f;
+  color: #f2f2f2;
+  padding: 2rem 6%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero-content h1 {
+  font-size: 3rem;
+}
+#hero button {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #f2f2f2;
+  background: transparent;
+  color: #f2f2f2;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+#hero button:hover {
+  background: #f2f2f2;
+  color: #14140f;
+  transform: scale(1.1);
+}
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0 2%;
+  }
+  #hero {
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-img img {
+    height: 50vh;
+  }
+  .hero-content {
+    align-items: center;
+  }
 }

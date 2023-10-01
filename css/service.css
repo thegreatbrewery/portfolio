@@ -1,0 +1,29 @@
+/* #323946 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kaushan Script", cursive;
+  outline: none;
+}
+.navbar {
+  padding: 0 6%;
+  background-color: #14140f;
+}
+.nav-link {
+  /* color: #f2f2f2; */
+  color: #14140f;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s ease;
+  margin-left: 2rem;
+  text-align: center;
+}
+.nav-link:hover {
+  color: #14140f;
+  border-bottom: 2px solid #14140f;
+}
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0 2%;
+  }
+}
