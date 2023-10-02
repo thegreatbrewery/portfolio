@@ -2,31 +2,31 @@
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
   font-family: "Kaushan Script", cursive;
   outline: none;
 }
 .navbar {
-  padding: 0 6%;
+  padding: 0 10%;
   background-color: #14140f;
 }
 .nav-link {
   color: #14140f;
   border-bottom: 2px solid transparent;
+  font-weight: bold;
   transition: 0.5s ease;
   margin-left: 2rem;
   text-align: center;
 }
 .nav-link:hover {
-  color: #14140f;
-  border-bottom: 2px solid #14140f;
+  color: #00ccc0;
+  border-bottom: 2px solid #00ccc0;
 }
 #hero {
   min-height: calc(100vh-60px);
   background-color: #14140f;
   color: #f2f2f2;
-  padding: 2rem 6%;
+  padding: 2rem 10%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
@@ -53,21 +53,78 @@
 }
 #hero button:hover {
   background: #f2f2f2;
-  color: #14140f;
+  color: #00ccc0;
   transform: scale(1.1);
 }
+#about {
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  color: #14140f;
+  padding: 0.5rem 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.about-content h2 span {
+  color: #00ccc0;
+}
+.about-content,
+.about-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-content p {
+  text-align: justify;
+}
+.about-cta h2 {
+  color: #00ccc0;
+  margin: 1.5rem 0;
+}
+.about-cta button {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #14140f;
+  background: transparent;
+  color: #14140f;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.about-cta button:hover {
+  background: #14140f;
+  color: #00ccc0;
+  transform: scale(1.1);
+}
+#portfolio {
+  min-height: 100vh;
+  background-color: #14140f;
+  color: #f2f2f2;
+  padding: 2rem 10%;
+}
+.portfolio-content h2 {
+  text-align: center;
+}
+
 @media (max-width: 900px) {
   .navbar {
     padding: 0 2%;
   }
-  #hero {
-    padding: 0 2%;
+  #hero,
+  #about {
+    padding: 1rem 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .hero-img img {
+  .hero-img img,
+  #about img {
     height: 50vh;
   }
   .hero-content {
